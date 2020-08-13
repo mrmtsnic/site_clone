@@ -1,0 +1,283 @@
+body{
+  margin: 0;
+  font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.9;
+  text-align: left;
+}
+
+ul,li{
+  list-style: none;
+}
+
+div.section{
+  width: 920px;
+  margin:0 auto 100px;
+  height: auto;
+  font-family: 'Lato',sans-serif;
+  color: #505050;
+}
+
+h1.title{
+  text-align: center;
+  margin-bottom: 65px;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  line-height: 1.0;
+}
+
+/* header */
+header{
+  width: 960px;
+  height: 270px;
+  margin: 0 auto;
+  background-color: #fff;
+  position: relative;
+}
+
+header h1{
+  position: absolute;
+  top:105px;
+  left: 0;
+}
+
+header h1 a{
+  color: #333;
+  text-decoration: none;
+}
+
+header h1 img{
+  width: 275px;
+  height: 35px;
+}
+
+header ul.sns{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 112px;
+  right: 10px;
+  height: auto;
+  width: 56px;
+}
+
+header ul.sns li{
+  width: 22px;
+  height: 22px;
+}
+
+header ul.sns li a{
+  text-decoration: none;
+  display: block;
+  color: #333;
+}
+
+.fab{
+  font-size: 22px;
+}
+
+ul.menu {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom:20px;
+  right: 0;
+}
+
+ul.menu li{
+  margin-left: 50px;
+}
+
+ul.menu li a{
+  font-size: 14px;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+ul.menu li a:hover{
+  text-decoration: underline;
+}
+
+
+
+/* main */
+main {
+  width: 100%;
+  background-color: #fff;
+  height: auto;
+  color: #505050;
+}
+
+/* main画像 */
+div#mainvisual{
+  width: 100%;
+  height: auto;
+  background-color: #ecebeb;
+  margin-bottom: 80px;
+}
+
+div#mainimage{
+  width: 960px;
+  height :492px;
+  margin: 0 auto;
+}
+
+div#mainimage img{
+  width: 960px;
+  height: 492px;
+}
+
+/* サービス */
+div#service h1{
+  text-align: center;
+  margin-bottom: 65px;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  line-height: 1.0;
+}
+
+div#service ul{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+div#service ul li{
+  width: 280px;
+}
+
+div#service h2{
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.0;
+  margin-bottom: 16px;
+}
+
+div#service ul li dl dt span{
+  font-size: 14px;
+  display: block;
+  letter-spacing: 0.1em;
+  margin-bottom: 45px;
+}
+
+div#service ul li dl dd p{
+  text-align: left;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+/* ワークス */
+div#works {
+  width: 920px;
+  margin: 0 auto 80px;
+  height: auto;
+}
+
+div#works ul{
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div#works ul li{
+  width: 30%;
+  height: 280px;
+  margin-bottom: 60px;
+}
+
+
+
+
+/* ブログ */
+div#blog {
+  width: 920px;
+  height: auto;
+  margin: 0 auto 80px;
+  padding: 0;
+}
+
+div#blog ul{
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+div#blog li{
+  width: 30%;
+  height: auto;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+div#blog dl{
+  text-align: center;
+}
+
+div#blog dt{
+  margin-bottom: 30px;
+}
+
+div#blog dd{
+  margin-bottom: 20px;
+  font-size: 13px;
+  text-align: left;
+}
+
+.more_button{
+  position: absolute;
+  bottom: -30px;
+  right: 0px;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #EEEEEE;
+}
+
+.more_button:hover{
+  text-decoration: underline;
+}
+
+.toTop{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.toTop .top{
+  color: #BCBCBC;
+}
+
+
+/* footer */
+
+footer{
+  width: 960px;
+  height: 106px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer div.left{
+  height: auto;
+}
+
+.left ul{
+  display: flex;
+}
+
+.left ul li{
+  margin-right: 50px;
+}
+
+.right p{
+  font-size: 12px;
+}
