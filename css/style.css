@@ -448,6 +448,14 @@ div#service img{
     bottom:20px;
     right: 20px;
   }
+
+  ul.menu li a:hover{
+    text-decoration: underline;
+  }
+
+  footer div.left ul li a:hover{
+    text-decoration: underline;
+  }
 }
 
 
