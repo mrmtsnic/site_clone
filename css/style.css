@@ -36,7 +36,6 @@ header {
   height: 270px;
   margin: 0 auto;
   background-color: #fff;
-  position: relative;
 }
 
 header h1 a {
@@ -149,7 +148,7 @@ div#service ul li dl dd p {
 }
 
 div#works {
-  max-width: 960px;
+  width: 100%;
   height: auto;
 }
 
@@ -173,7 +172,7 @@ div#works ul li {
 }
 
 div#blog {
-  max-width: 960px;
+  width: 100%;
   height: auto;
   padding: 0;
 }
@@ -270,7 +269,7 @@ footer div.left {
 }
 
 /* レスポンシブ */
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 670px) {
   body {
     width: 100%;
   }
@@ -326,6 +325,12 @@ footer div.left {
   }
   div#mainvisual {
     margin-bottom: 40px;
+  }
+  div#mainvisual #mainimage {
+    height: auto;
+  }
+  div#mainvisual img {
+    height: 400px;
   }
   div#mainimage, div.section {
     width: 100%;
@@ -437,7 +442,10 @@ footer div.left {
   }
 }
 
-@media (min-width: 731px) {
+@media (min-width: 671px) {
+  header {
+    position: relative;
+  }
   header h1 {
     position: absolute;
     top: 105px;
@@ -455,6 +463,40 @@ footer div.left {
     right: 10px;
     height: auto;
     width: 56px;
+  }
+  div#service ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  div#service ul li {
+    width: 280px;
+    margin-right: 10px;
+  }
+  div#service ul li:last-child {
+    margin-right: 0;
+  }
+  div#service h2 {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 1.0;
+    margin-bottom: 16px;
+  }
+  div#service ul li dl dt span {
+    font-size: 14px;
+    display: block;
+    letter-spacing: 0.1em;
+    margin-bottom: 45px;
+  }
+  div#service ul li dl dd p {
+    text-align: left;
+    font-size: 13px;
+    margin-top: 30px;
   }
   ul.menu {
     display: -webkit-box;

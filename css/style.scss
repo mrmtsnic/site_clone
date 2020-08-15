@@ -36,7 +36,6 @@ header {
   height: 270px;
   margin: 0 auto;
   background-color: #fff;
-  position: relative;
 
   h1 {
     a {
@@ -157,7 +156,7 @@ div {
   }
 
   &#works {
-    max-width: 960px;
+    width: 100%;
     height: auto;
 
     ul {
@@ -176,7 +175,7 @@ div {
   }
 
   &#blog {
-    max-width: 960px;
+    width: 100%;
     height: auto;
     padding: 0;
 
@@ -265,7 +264,7 @@ footer {
 }
 
 /* レスポンシブ */
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 670px) {
   body {
     width: 100%;
   }
@@ -274,6 +273,7 @@ footer {
     width: 100%;
     height: auto;
     margin-bottom: 25px;
+
 
     h1 {
       margin: 21px 0 25px 0;
@@ -322,6 +322,13 @@ footer {
   div {
     &#mainvisual {
       margin-bottom: 40px;
+
+      #mainimage{
+        height:auto ;
+      }
+      img{
+        height: 400px;
+      }
     }
 
     &#mainimage, &.section {
@@ -439,8 +446,11 @@ footer {
   }
 }
 
-@media (min-width: 731px) {
+@media (min-width: 671px) {
   header {
+    position: relative;
+
+
     h1 {
       position: absolute;
       top: 105px;
@@ -458,6 +468,50 @@ footer {
     }
   }
 
+
+  div {
+    &#service {
+      ul {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        box-sizing: border-box;
+
+  
+        li {
+          width: 280px;
+          margin-right: 10px;
+
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+
+      }
+  
+      h2 {
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 1.0;
+        margin-bottom: 16px;
+      }
+  
+      ul li dl {
+        dt span {
+          font-size: 14px;
+          display: block;
+          letter-spacing: 0.1em;
+          margin-bottom: 45px;
+        }
+  
+        dd p {
+          text-align: left;
+          font-size: 13px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
   ul.menu {
     display: flex;
     justify-content: space-between;
@@ -473,4 +527,9 @@ footer {
   footer div.left ul li a:hover {
     text-decoration: underline;
   }
+
+}
+
+@media (min-width:1001px){
+
 }
