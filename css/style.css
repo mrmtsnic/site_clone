@@ -1,4 +1,5 @@
-body{
+@charset "UTF-8";
+body {
   width: 100%;
   margin: 0;
   font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
@@ -8,19 +9,19 @@ body{
   text-align: left;
 }
 
-ul,li{
+ul, li {
   list-style: none;
 }
 
-div.section{
+div.section {
   max-width: 960px;
-  margin:0 auto 100px;
+  margin: 0 auto 100px;
   height: auto;
   font-family: 'Lato',sans-serif;
   color: #505050;
 }
 
-h1.title{
+h1.title {
   text-align: center;
   margin-bottom: 65px;
   font-size: 50px;
@@ -30,7 +31,7 @@ h1.title{
 }
 
 /* header */
-header{
+header {
   max-width: 960px;
   height: 270px;
   margin: 0 auto;
@@ -38,36 +39,36 @@ header{
   position: relative;
 }
 
-header h1 a{
+header h1 a {
   color: #333;
   text-decoration: none;
 }
 
-header h1 img{
+header h1 img {
   width: 275px;
   height: 35px;
 }
 
-header ul.sns li{
+header ul.sns li {
   width: 22px;
   height: 22px;
 }
 
-header ul.sns li a{
+header ul.sns li a {
   text-decoration: none;
   display: block;
   color: #333;
 }
 
-.fab{
+.fab {
   font-size: 22px;
 }
 
-ul.menu li{
+ul.menu li {
   margin-left: 50px;
 }
 
-ul.menu li a{
+ul.menu li a {
   font-size: 14px;
   width: 100%;
   display: block;
@@ -84,26 +85,26 @@ main {
 }
 
 /* main画像 */
-div#mainvisual{
+div#mainvisual {
   width: 100%;
   height: auto;
   background-color: #ecebeb;
   margin-bottom: 80px;
 }
 
-div#mainimage{
+div#mainimage {
   max-width: 960px;
-  height :492px;
+  height: 492px;
   margin: 0 auto;
 }
 
-div#mainimage img{
+div#mainimage img {
   width: 100%;
   height: 492px;
 }
 
 /* サービス */
-h1.class{
+h1.class {
   text-align: center;
   margin-bottom: 65px;
   font-size: 50px;
@@ -112,93 +113,105 @@ h1.class{
   line-height: 1.0;
 }
 
-div#service ul{
+div#service ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-div#service ul li{
+div#service ul li {
   width: 280px;
   margin-right: 10px;
 }
 
-div#service h2{
+div#service h2 {
   font-weight: normal;
   font-size: 24px;
   line-height: 1.0;
   margin-bottom: 16px;
 }
 
-div#service ul li dl dt span{
+div#service ul li dl dt span {
   font-size: 14px;
   display: block;
   letter-spacing: 0.1em;
   margin-bottom: 45px;
 }
 
-div#service ul li dl dd p{
+div#service ul li dl dd p {
   text-align: left;
   font-size: 13px;
   margin-top: 30px;
 }
 
-/* ワークス */
 div#works {
   max-width: 960px;
   height: auto;
 }
 
-div#works ul{
+div#works ul {
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
 }
 
-div#works ul li{
+div#works ul li {
   width: 30%;
   height: 280px;
   margin-bottom: 60px;
 }
 
-/* ブログ */
 div#blog {
   max-width: 960px;
   height: auto;
   padding: 0;
 }
 
-div#blog ul{
+div#blog ul {
   height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-div#blog li{
+div#blog li {
   width: 30%;
   height: auto;
   margin-bottom: 60px;
   position: relative;
 }
 
-div#blog dl{
+div#blog dl {
   text-align: center;
 }
 
-div#blog dt{
+div#blog dt {
   margin-bottom: 30px;
 }
 
-div#blog dd{
+div#blog dd {
   margin-bottom: 20px;
   font-size: 13px;
   text-align: left;
 }
 
-.more_button{
+.more_button {
   position: absolute;
   bottom: -30px;
   right: 0px;
@@ -212,202 +225,203 @@ div#blog dd{
   font-family: Helvetica, '游ゴシック', 'Yu Gothic', YuGothic, HiraKakuProN-W3, 'メイリオ', Meiryo, sans-serif;
 }
 
-.more_button:hover{
+.more_button:hover {
   text-decoration: underline;
 }
 
-.toTop{
+.toTop {
   text-align: center;
   margin-bottom: 20px;
 }
 
-.toTop .top{
+.toTop .top {
   color: #BCBCBC;
 }
 
-
 /* footer */
-
-footer{
+footer {
   max-width: 960px;
   height: 106px;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-footer div.left{
+footer div.left {
   height: auto;
 }
 
-.left ul{
+.left ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.left ul li{
+.left ul li {
   margin-right: 50px;
 }
 
-.right p{
+.right p {
   font-size: 12px;
 }
 
 /* レスポンシブ */
-@media only screen and (max-width:730px){
-body{
-  width: 100%;
-}
-
-  header{
+@media only screen and (max-width: 730px) {
+  body {
+    width: 100%;
+  }
+  header {
     width: 100%;
     height: auto;
     margin-bottom: 25px;
   }
-
-  header h1{
-    margin:21px 0 25px 0;
+  header h1 {
+    margin: 21px 0 25px 0;
     width: 100%;
     text-align: left;
-    top:0;
+    top: 0;
   }
-
-  ul.menu{
+  ul.menu {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content:space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     border-top: 1px solid #d9d9d9;
     margin-bottom: 20px;
   }
-
-  ul.menu li{
+  ul.menu li {
     text-align: center;
     margin-left: 0px;
     width: 50%;
     border-bottom: 1px solid #d9d9d9;
   }
-
-  ul.menu li:nth-child(odd){
+  ul.menu li:nth-child(odd) {
     border-right: 1px solid #d9d9d9;
   }
-
-  ul.menu li a{
+  ul.menu li a {
     padding: 12px 0;
   }
-
   header ul.sns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
   }
-
-  header ul.sns li{
+  header ul.sns li {
     margin-left: 5px;
     margin-right: 5px;
   }
-
-  div#mainvisual{
+  div#mainvisual {
     margin-bottom: 40px;
   }
-  div#mainimage{
+  div#mainimage, div.section {
     width: 100%;
   }
-
-  div.section{
-    width: 100%;
-  }
-
-  h1.title{
+  h1.title {
     font-size: 40px;
     margin-bottom: 40px;
   }
-
-div#service{
-  padding: 0 30px;
-  margin-bottom: 60px;
-}
-
-div#service ul li{
-  width:auto;
-  margin-bottom: 40px;
-}
-
-div#service h2{
-  font-size: 22px;
-  margin-bottom: 12px;
-}
-
-div#service ul li dl dt span{
-  margin-bottom: 20px;
-}
-
-div#service img{
-  width: 49px;
-  height: 51px;
-}
-
-  #service ul{
-    flex-direction: column;
-    align-items: center;
+  div#service {
+    padding: 0 30px;
+    margin-bottom: 60px;
   }
-
-  div#works{
+  div#service ul li {
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+  div#service h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  div#service ul li dl dt span {
+    margin-bottom: 20px;
+  }
+  div#service img {
+    width: 49px;
+    height: 51px;
+  }
+  #service ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  div#works {
     width: 100%;
     margin-bottom: 60px;
   }
-
-  #works ul{
-    flex-direction: column;
-    align-items: center;
+  #works ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
   }
-
-  div#works ul li{
+  div#works ul li {
     width: auto;
   }
-
-  div#blog{
+  div#blog {
     width: 100%;
     padding: 0 30px;
     margin-bottom: 30px;
   }
-
-  div#blog ul{
-    flex-direction: column;
-    align-items: center;
+  div#blog ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-
-  div#blog li{
+  div#blog li {
     width: auto;
   }
-
-  footer{
+  footer {
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-
-  .left{
+  .left {
     margin-bottom: 20px;
   }
-
-  .left ul{
+  .left ul {
     border-top: 1px solid #d9d9d9;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-
-  .left ul li{
+  .left ul li {
     border-bottom: 1px solid #d9d9d9;
     text-align: center;
-    width:50%;
-    margin:0;
+    width: 50%;
+    margin: 0;
   }
-
-  .left ul li:nth-child(odd){
+  .left ul li:nth-child(odd) {
     border-right: 1px solid #d9d9d9;
   }
-
-  .left ul li a{
+  .left ul li a {
     display: block;
     width: 100%;
     padding: 12px 0;
@@ -416,46 +430,48 @@ div#service img{
     /* letter-spacing: 0.1em; */
     color: #333;
   }
-
-  .right{
+  .right {
     text-align: center;
     margin-bottom: 20px;
     font-size: 12px;
   }
 }
 
-@media(min-width:731px){
-  header h1{
+@media (min-width: 731px) {
+  header h1 {
     position: absolute;
-    top:105px;
+    top: 105px;
     left: 0;
   }
-
-  header ul.sns{
+  header ul.sns {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: absolute;
     top: 112px;
     right: 10px;
     height: auto;
     width: 56px;
   }
-
   ul.menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: absolute;
-    bottom:20px;
+    bottom: 20px;
     right: 20px;
   }
-
-  ul.menu li a:hover{
+  ul.menu li a:hover {
     text-decoration: underline;
   }
-
-  footer div.left ul li a:hover{
+  footer div.left ul li a:hover {
     text-decoration: underline;
   }
 }
-
-
+/*# sourceMappingURL=style.css.map */
